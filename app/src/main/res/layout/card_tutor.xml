@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_tutor"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image5"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_tutor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_tutor"
+                android:background="@color/semi_transparent">
+
+            <TextView
+                android:id="@+id/tv_tutorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Elisha Cuthbert"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/iv_verified"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/splash_tick"
+                android:layout_toRightOf="@+id/tv_tutorname"
+                android:layout_marginTop="8dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/tv_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Mathematics, Physics, Chemistry, Biology "
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/line_gray"
+                android:paddingBottom="8dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/tv_tutorname"
+                android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_purple"
+                android:text="HK$ 300"
+                android:textColor="@color/background_gray"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:id="@+id/tv_rate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

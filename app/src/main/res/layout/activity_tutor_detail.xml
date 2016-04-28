@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hudsonacademy.activity.TutorDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_tutor_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="30dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_tutor_icon"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            android:src="@drawable/image"
+            app:border_width="1dp"
+            app:border_color="@color/dark_purple"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tutorname"
+            android:textColor="@color/black"
+            android:text="Tutor's name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@+id/civ_tutor_icon"
+            android:layout_toRightOf="@+id/civ_tutor_icon"
+            android:layout_toEndOf="@+id/civ_tutor_icon" />
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user_female"
+            android:layout_toRightOf="@id/tv_tutorname"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_verified"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_tutorname"
+            android:layout_alignLeft="@+id/tv_tutorname"
+            android:layout_alignStart="@+id/tv_tutorname"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_verified"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:src="@drawable/splash_tick"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:visibility="visible"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verified Account"
+                android:layout_toRightOf="@+id/iv_verified"
+                android:textColor="@color/feed_bg_gray"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tutorrate"
+            android:background="@drawable/button_purple"
+            android:text="HK$ 300/hr"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/rl_verified"
+            android:layout_alignLeft="@+id/tv_tutorname"
+            android:layout_alignStart="@+id/tv_tutorname"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tutorlocation"
+            android:text="Hong Kong, Hong Kong"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv_tutorrate"
+            android:layout_alignLeft="@+id/tv_tutorname"
+            android:layout_alignStart="@+id/tv_tutorname"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_tutor_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_below="@id/tv_tutorlocation"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            android:text="Highly experienced tutor in IB Mathematics, Physics and Chemistry"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tutor_summary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_email"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tutor_summary"
+            android:layout_toLeftOf="@+id/rl_separator"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_golden"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:paddingRight="28dp"
+                android:paddingLeft="28dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/message"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_phone"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tutor_summary"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/rl_separator"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/button_green"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="22dp"
+                android:paddingRight="28dp"
+                android:paddingLeft="28dp"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/phone_classic"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_tutor_summary"
+        app:tabIndicatorColor="@color/dark_purple"
+        app:tabIndicatorHeight="4dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tutor_detailtabs"
+        android:layout_below="@id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:background="@color/line_gray"
+        android:layout_height="match_parent" >
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
